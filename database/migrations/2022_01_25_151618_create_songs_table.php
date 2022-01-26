@@ -18,7 +18,8 @@ class CreateSongsTable extends Migration
             $table->bigInteger('album_id');
             $table->string('title');
             $table->unsignedBigInteger('num_of_play');
-            $table->time('duration');
+            $table->integer('duration');
+            $table->boolean('explicit');
             $table->timestamps();
         });
     }
